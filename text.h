@@ -10,7 +10,7 @@
 #include <string.h>
 #include "report.h"
 
-
+//Global Variables
 extern char keyword[100];
 extern char newKeyword[100];
 extern struct tracker track [20];

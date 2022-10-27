@@ -9,13 +9,16 @@
 #include <dirent.h>
 #include <string.h>
 
+//Lets this file know of the global variable keyword
 extern char keyword[100];
 
+//Tracker struct that tracks the filename in terms of relative path and the number of modification done to it
 struct tracker{
     char pathName [100];
     int mods;
 };
 
+//Provides a way to compare tracker objects
 int comparator(const void * first, const void * second);
 
 void generateReport();
